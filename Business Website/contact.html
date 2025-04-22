@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Horizon Travels</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+ <!-- animate css -->
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="64x64" href="./icon.png">
+
+ <link
+ rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+ <style>
+    .contact-header
+    {
+        height: 500px;
+     background-image: url("https://cdn.pixabay.com/photo/2020/01/06/10/16/train-4745050_1280.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+     
+    }
+    .contact
+    {
+        animation: contact 1000ms;
+    }
+    @keyframes contact{
+        from
+        {
+            transform: translateY(-220%);
+        }
+        to
+        {
+            transform: translateY(40%);
+        }
+    }
+ </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-globe-americas me-2"></i>Horizon Travels
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header contact-header">
+        <div class="overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-4 fw-bold text-black contact">Contact Us</h1>
+                    <p class="lead text-black fw-bold">We're here to help plan your perfect journey</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title">Our Location</h4>
+                            <p class="card-text">123 Travel Street<br>City, Country<br>Postal Code</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-outline-primary mt-3">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-phone fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title">Phone Numbers</h4>
+                            <p class="card-text">
+                                General Inquiries: <br><a href="tel:+15551234567">+1 (555) 123-4567</a><br>
+                                Customer Support: <br><a href="tel:+15557654321">+1 (555) 765-4321</a>
+                            </p>
+                            <p class="text-muted mt-2">Available 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card contact-card h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-envelope fa-3x text-primary"></i>
+                            </div>
+                            <h4 class="card-title">Email Us</h4>
+                            <p class="card-text">
+                                General Inquiries: <br><a href="mailto:info@horizontravels.com">info@horizontravels.com</a><br>
+                                Bookings: <br><a href="mailto:bookings@horizontravels.com">bookings@horizontravels.com</a>
+                            </p>
+                            <p class="text-muted mt-2">We respond within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-5">
+                            <h2 class="text-center mb-4">Send Us a Message</h2>
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="" selected disabled>Select a subject</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="booking">New Booking</option>
+                                        <option value="existing">Existing Booking</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="newsletter">
+                                    <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">Office Hours</h2>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9:00 AM - 6:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>10:00 AM - 4:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-3">Our customer support hotline is available 24/7 for emergencies.</p>
+                    <div class="mt-4">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons mt-3">
+                            <a href="#" class="text-primary me-3"><i class="fab fa-facebook-f fa-2x"></i></a>
+                            <a href="#" class="text-primary me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#" class="text-primary me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="#" class="text-primary"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-container">
+                        <!-- Replace with your Google Maps embed code -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215266754809!2d-73.98784492426385!3d40.75798657138946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1698765432109!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How do I make a booking?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can make a booking through our website, by calling our office, or by sending us an email. We recommend contacting us directly for customized packages to ensure we meet all your requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is your cancellation policy?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our cancellation policy varies depending on the type of booking and the time of cancellation. Generally, cancellations made 30 days or more before departure receive a full refund minus a small administrative fee. Please refer to the specific terms and conditions provided with your booking confirmation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer travel insurance?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we strongly recommend travel insurance for all our clients. We offer comprehensive travel insurance packages that cover trip cancellation, medical emergencies, lost luggage, and more. Our team can help you select the right coverage for your specific needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    How far in advance should I book my trip?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For optimal availability and pricing, we recommend booking at least 3-6 months in advance for international trips and 1-3 months for domestic travel. However, we also offer last-minute deals for spontaneous travelers when available.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Start Your Journey?</h2>
+            <p class="lead mb-4">Our travel experts are waiting to help you plan your perfect trip.</p>
+            <a href="tel:+15551234567" class="btn btn-light btn-lg me-3 mb-3 mb-md-0"><i class="fas fa-phone me-2"></i>Call Us Now</a>
+            <a href="#" class="btn btn-outline-light btn-lg"><i class="fas fa-calendar-alt me-2"></i>Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5><i class="fas fa-globe-americas me-2"></i>Horizon Travels</h5>
+                    <p>Your trusted partner for unforgettable travel experiences since 2005. We specialize in creating personalized journeys that match your travel style and preferences.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h5>Popular Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Bali, Indonesia</a></li>
+                        <li><a href="#" class="text-white">Paris, France</a></li>
+                        <li><a href="#" class="text-white">Maldives</a></li>
+                        <li><a href="#" class="text-white">Santorini, Greece</a></li>
+                        <li><a href="#" class="text-white">Tokyo, Japan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>Contact Us</h5>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt me-2"></i>123 Travel Street, City, Country</p>
+                        <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@horizontravels.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Horizon Travels. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <a href="#" class="text-white">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
